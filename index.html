@@ -4,48 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .cell {
-            color: white;
-            font-weight: bolder;
-            text-align: center;
-        }
-
-       
-
-        .container {
-            display: grid;
-            grid-template-columns: 25vw 18vw 25vw;
-            grid-template-rows: 20vh 40vh 20vh;  
-            justify-content: space-between; 
-        }
-
-        
-
-    </style>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Furniture Shop</title>
     
 </head>
 <body>
-    <h1> гриды </h1>
-    <div class="container">
-        <div class="cell cell-1" style="background-color: red;"> ячейка 1 </div>  
-        <div class="cell cell-2" style="background-color: orange;"> ячейка 2 </div>    
-        <div class="cell cell-3" style="background-color: yellow;"> ячейка 3 </div>
-        <div class="cell cell-4" style="background-color: green;"> ячейка 4 </div>
-        <div class="cell cell-5" style="background-color: blue;"> ячейка 5 </div>
-        <div class="cell cell-6" style="background-color: darkblue;"> ячейка 6 </div>
-        <div class="cell cell-7" style="background-color: red;"> ячейка 7 </div>  
-        <div class="cell cell-8" style="background-color: orange;"> ячейка 8 </div>    
-        <div class="cell cell-9" style="background-color: yellow;"> ячейка 9 </div>
-       
+      <header>
+    <div class="wrapper__navbar">
+      <nav class="navbar">
+        <div class="container__navbar">
+          <a href="#" class="navbar__brand">Funiro.</a>
+          <div class="navbar__list-body">
+            <ul class="navbar__list">
+              <li>
+                <a href="#" class="navbar__products-link navbar__link">Products</a>
+                <img src="./images/icons/menu-arrow.svg" alt="" class="arrow__link" />
+                <ul class="navbar__products-sublist">
+                  <li>
+                    <a href="#" class="navbar__product-link link">Product1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="navbar__product-link link">Product2</a>
+                  </li>
+                  <li>
+                    <a href="#" class="navbar__product-link link">Product3</a>
+                  </li>
+                </ul>
+              </li>
 
+              <li>
+                <a href="#" class="navbar__rooms-list navbar__link">Rooms</a>
+                <img src="./images/icons/menu-arrow.svg" alt="" class="arrow__link" />
+                <ul class="navbar__rooms-sublist">
+                  <li>
+                    <a href="#" class="navbar__room-link link">Room1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="navbar__room-link link">Room2</a>
+                  </li>
+                  <li>
+                    <a href="#" class="navbar__room-link link">Room3</a>
+                  </li>
+                  <li>
+                    <a href="#" class="navbar__room-link link">Room4</a>
+                  </li>
+                </ul>
+              </li>
 
+              <li>
+                <a href="#" class="navbar__inspirations navbar__link">Inspirations</a>
+              </li>
+            </ul>
+          </div>
 
+          <div class="navbar__search-field">
+            <input type="text" class="search-field" placeholder="Search for minimalist chair" />
+            <img src="./images/icons/search_icon.svg" alt="Search icon" class="search-icon" />
+          </div>
+
+          <div class="navbar__icons">
+            <a href="#" class="navbar__favorite-icon">
+              <img src="./images/icons/heart-b_icon.svg" alt="Selected products" class="navbar__favorite-items" />
+            </a>
+
+            <a href="#" class="navbar__cart-icon">
+              <img src="./images/icons/cart_icon.svg" alt="Cart" class="navbar__cart" />
+            </a>
+
+            <a href="#" class="navbar__user-avatar">
+              <img src="./images/icons/avatar.jpg" alt="Avatar" class="user-avatar" />
+            </a>
+          </div>
+          <div class="navbar__burgermenu">
+            <span></span>
+          </div>
+        </div>
+      </nav>
 
 
     </div>
-
-    
+  </header>
 </body>
 </html>

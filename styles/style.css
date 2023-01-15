@@ -1,0 +1,371 @@
+/*Gilroy font starts*/
+
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-style: normal;
+    src: local(''),
+        url('./fonts/Gilroy-Regular.ttf') format('truetype'),
+        url('./fonts/Gilroy-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-style: normal;
+    src: local(''),
+        url('./fonts/Gilroy-Medium.ttf') format('truetype'),
+        url('./fonts/Gilroy-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-style: normal;
+    src: local(''),
+        url('./fonts/Gilroy-Semibold.ttf') format('truetype'),
+        url('./fonts/Gilroy-Semibold.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-style: normal;
+    src: local(''),
+        url('./fonts/Gilroy-Bold.ttf') format('truetype'),
+        url('./fonts/Gilroy-Bold.woff') format('woff');
+}
+
+/*Gilroy font ends*/
+
+body {
+    font-family: 'Gilroy', sans-serif;
+}
+
+/*Navbar style stars*/
+
+body {
+    font-family: 'Gilroy', sans-serif;
+}
+
+.wrapper__navbar {
+    height: 200vh;
+    margin: 0;
+    background: linear-gradient(to right, #F9F1E7 67%, #FCF8F3 33%);
+}
+
+.navbar {
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 42px 0 42px 0;
+}
+
+.navbar__colored {
+    background: rgba(255, 255, 255, 0.52);
+}
+
+.navbar a {
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.navbar li {
+    list-style-type: none;
+    position: relative;
+}
+
+.container__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: auto;
+    padding: 0 70px 0 70px;
+}
+
+.navbar__brand {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29.02px;
+    color: black;
+    margin: 0 41px 0 0;
+    z-index: 15;
+}
+
+.navbar__list {
+    display: flex;
+    justify-content: space-between;
+    width: 336px;
+    padding: 0;
+    margin: 0 43px 0 0;
+}
+
+.navbar__link {
+    color: #3A3A3A;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.navbar__link:hover,
+.navbar__link:active {
+    color: #E89F71;
+}
+
+.navbar__products-sublist {
+    display: none;
+    min-width: 135px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    padding: 10px 0 0 0;
+}
+
+.navbar__rooms-sublist {
+    display: none;
+    min-width: 120px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    padding: 10px 0 0 0;
+}
+
+.navbar__products-sublist>li,
+.navbar__rooms-sublist>li {
+    background: #E89F71;
+    padding: 5px 10px 5px 5px;
+}
+
+.navbar__list>li:hover .navbar__products-sublist,
+.navbar__list>li:hover .navbar__rooms-sublist {
+    display: block;
+}
+
+.navbar__list>li._active .navbar__products-sublist,
+.navbar__list>li._active .navbar__rooms-sublist {
+    display: block;
+    height: 100%;
+}
+
+.navbar__list>li._active .arrow__link {
+    transform: rotate(-180deg);
+}
+
+.link {
+    color: white;
+}
+
+.link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar__search-field {
+    display: inline-flex;
+    background-color: white;
+    width: 473px;
+    height: 45px;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    margin: 12px;
+    order: -1;
+}
+
+.search-field {
+    width: 300px;
+    border: 0;
+}
+
+.search-field:focus {
+    outline: none;
+}
+
+.navbar__icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__icons img {
+    margin: 0 15px;
+}
+
+@media screen and (max-width:1074px) {
+    .container__navbar {
+        padding: 0 20px 0 0;
+    }
+
+    .navbar__brand {
+        margin: 0 20px 0 0;
+    }
+
+    .navbar__list {
+        width: 250px;
+        margin: 0 10px 0 0;
+    }
+
+    .navbar__search-field {
+        width: 253px;
+    }
+
+    .navbar__icons img {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (min-width:769px) {}
+
+@media screen and (max-width:768px) {
+    .navbar__burgermenu {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        width: 30px;
+        height: 18px;
+        z-index: 10;
+    }
+
+    .navbar__burgermenu span,
+    .navbar__burgermenu::before,
+    .navbar__burgermenu::after {
+        position: absolute;
+        width: 100%;
+        height: 10%;
+        left: 0;
+        transition: all 0.3s ease 0s;
+        background-color: black;
+    }
+
+    .navbar__burgermenu::before,
+    .navbar__burgermenu::after {
+        content: '';
+    }
+
+    .navbar__burgermenu::before {
+        top: 0;
+    }
+
+    .navbar__burgermenu::after {
+        bottom: 0;
+    }
+
+    .navbar__burgermenu span {
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+
+    .navbar__burgermenu._active span {
+        transform: scale(0) translate(0px, -50%);
+    }
+
+    .navbar__burgermenu._active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+
+    .navbar__burgermenu._active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+
+    .container__navbar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .navbar__brand {
+        margin: 0 20px 0 5px;
+    }
+
+    .navbar__list-body {
+        order: 3;
+        display: none;
+    }
+
+    .navbar__list-body._active {
+        display: block;
+    }
+
+    .navbar__list {
+        display: block;
+        padding: 15px 0 0 10px;
+    }
+
+    .navbar__list>li {
+        padding: 10px 5px 5px 5px;
+    }
+
+    .navbar__products-sublist,
+    .navbar__rooms-sublist {
+        padding: 20px 0;
+        z-index: 10;
+    }
+
+    .navbar__search-field {
+        order: 2;
+        display: none;
+    }
+
+    .navbar__icons {
+        width: 50%;
+        justify-content: space-between;
+    }
+}
+
+/*Navbar style ends*/
+
+.main__products {
+    display: flex;
+    flex-direction: column;
+    max-width: 1236px;
+    margin: 0 auto;
+    width: 100%;
+    height: 1084px;
+    padding-top: 88px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 40px;
+    color: #3A3A3A;
+    text-align: center;
+}
+
+.products-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.products-gallery__button {
+    max-width: 245px;
+}
+
+.btn_white {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #E89F71;
+    border: 1px solid #E89F71;
+    height: 48px;
+    line-height: 24px
+}
