@@ -29,3 +29,26 @@ if (iconMenu) {
         bodyMenu.classList.toggle('_active');
     });
 }
+
+let errors = [];
+function checkValidity(input) {
+    let validity = input.validity;
+    const showErrorMessage = (el, message) => {
+        let div = document.createElement("div");
+        div.innerHTML = message;
+        el.after(div);
+        div.style.cssText = "color: red; padding: 5px 0 10px;";
+    };
+    if (validity.valueMissing) {
+        showErrorMessage(input, "Поле не заполнено");
+    }
+    if (!validity.patternMismatch) {
+        showErrorMessage(input, "Неверный формат заполнения");
+    }
+    }
+    function checkAll() {
+    let inputs = document.querySelectorAll("input");
+    for (let input of inputs) {
+        checkValidity(input);
+    }
+}

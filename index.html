@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/product_style.css">
     <title>Furniture Shop</title>
     
 </head>
@@ -112,9 +113,68 @@
               <img src="./images/icons/inactive-dot.svg" />
               <img src="./images/icons/inactive-dot.svg" />
             </div>
+
+    <section class="products">
+      <div class="products__container">
+        <div class="products__title title">Our Products</div>
+        <div class="products__items"></div>
+        <div class="products__footer">
+          <div class="products__button btn_white">Show More</div>
+        </div>
+      </div>
+    </section>
             
   </main>
 
-  <script src="./js.js"></script>
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="funiro">
+      <h2 class="footer_title">Funiro.</h2>
+      <p class="footer_text">
+        Worldwide furniture store since <br />
+        2020. We sell over 1000+ branded <br />
+        products on our website
+      </p>
+      <p class="footer_text">
+        <img src="./images/icons/tag_icon_footer.svg" alt="tag" /> Sawojajar Malang, Indonesia
+      </p>
+      <p class="footer_text"><img src="./images/icons/phone_icon_footer.svg" alt="phone" /> +6289 456 3455</p>
+      <p><a class="footer_link" href="">www.funiro.com</a></p>
+    </div>
+    <div class="menu">
+      <h2 class="footer_title">Menu</h2>
+      <p><a class="footer_link" href="">Products</a></p>
+      <p><a class="footer_link" href="">Rooms</a></p>
+      <p><a class="footer_link" href="">Inspirations</a></p>
+      <p><a class="footer_link" href="">About Us</a></p>
+      <p><a class="footer_link" href="">Terms & Policy</a></p>
+    </div>
+    <div class="account">
+      <h2 class="footer_title">Account</h2>
+      <p><a class="footer_link" href="">My Account</a></p>
+      <p><a class="footer_link" href="">Checkout</a></p>
+      <p><a class="footer_link" href="">My Cart</a></p>
+      <p><a class="footer_link" href="">My catalog</a></p>
+    </div>
+    <div class="connected">
+      <h2 class="footer_title">Stay Connected</h2>
+      <p><a class="footer_link" href="">Facebook</a></p>
+      <p><a class="footer_link" href="">Instagram</a></p>
+      <p><a class="footer_link" href="">Twitter</a></p>
+    </div>
+    <div class="updated">
+      <h2 class="footer_title updated_title">Stay <span> Updated </span></h2>
+      <div class="subscribe">
+        <input type="email" class="email" placeholder="Enter your email"
+          pattern="^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i" />
+        <button class="email_button" onclick="checkAll()">
+          <img class="email_pic" src="./images/icons/button_icon_footer.svg" alt="button" />
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/js.js"></script>
+  <script src="./js/products.js"></script>
 </body>
 </html>
