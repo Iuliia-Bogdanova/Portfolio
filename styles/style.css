@@ -337,12 +337,16 @@ body {
 }
 
 .slider {
-    /* position: absolute; */
+    display: block;
     width: 100vw;
     height: 623px;
     left: -560px; 
     top: 151px;
     z-index: 2;
+}
+
+.container__slider {
+    display: flex;
 }
 
 .slider__content {
@@ -394,6 +398,17 @@ body {
     margin: 24px 0;
     height: 78px;
     width: 100%;
+}
+
+.slider-main {
+    position: absolute;
+    height: 623px;
+    width: 934px;
+    left: 406px;
+    top: 151px;
+    border-radius: 0px;
+    border: 1px solid black;
+
 }
 
 
