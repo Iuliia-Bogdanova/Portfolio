@@ -334,9 +334,102 @@ body {
 .main {
     padding: 0px 70px 0px 70px;
     margin-bottom: 150px;
+    border: 1px solid red;
+} 
+
+.main-slider {
+    flex: 1 1 auto;
+    border: 1px solid orange;
+}  
+
+/* .main-slider__container {
+    position: absolute; 
+    top: 0;
+    width: 10vw;
+    right: 376px;
+    height: 100%;
+    border: 1px solid yellow;
+} */
+
+.main-slider__body {
+    display: flex;
+    padding: 140px 0px 0px 0px;
+    position: relative;
+    z-index: 2;
+    border: 1px solid green;
+    @media screen and (max-width:1074px) {
+        padding: 80px 0px 0px 0px;
+    }
+    @media screen and (max-width:768px) {
+        padding: 50px 0px 0px 0px;
+    } 
 }
 
-.slider {
+.main-slider__content {
+    flex: 0 0 40%;
+    height: 450px;
+    border: 1px solid blue; 
+    
+}
+
+.content-main {
+    position: relative;
+    z-index: 5;
+    padding: 60px 15px;
+    background: rgba(255, 255, 255, 0.72);
+    /* backdrop-filter: blur(15.5px); */
+    border: 1px solid violet; 
+    
+/* width: 494px; */
+
+
+}
+
+.content-main__title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0 0 16px 0;
+    border: 1px solid violet;
+}
+
+.content-main__text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #898989;
+    margin: 0 0 48px 0;
+    border: 1px solid violet;
+}
+
+.content-main__button {
+    display: block;
+    box-sizing: border-box;;
+    background: #E89F71;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    text-decoration: none;
+    text-align: center;
+    padding: 24px 0;
+    margin: 24px 0;
+    height: 78px;
+    width: 100%;
+}
+
+.main-slider__slider {
+    flex: 1 1 auto;
+    min-width: 0;
+    border: 1px solid black;
+}
+
+/* .slider {
     display: block;
     width: 100vw;
     height: 623px;
@@ -410,7 +503,7 @@ body {
     border: 1px solid black;
     
 
-}
+} */
 
 
 
