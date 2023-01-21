@@ -369,7 +369,7 @@ body {
 }
 
 .main-slider__content {
-    flex: 0 0 40%;
+    flex: 0 0 35%;
     height: 100%;
     border: 1px solid blue; 
 }
@@ -403,7 +403,7 @@ body {
 
 .content-main__button {
     display: block;
-    box-sizing: border-box;;
+    box-sizing: border-box;
     background: #E89F71;
     color: #FFFFFF;
     font-style: normal;
@@ -423,9 +423,24 @@ body {
     background: #d38a5c;
 }
 
+.slider__slider-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* начинает слайдер справа */
+    border: 1px solid yellow;
+}
+
 .main-slider__slider {
     flex: 1 1 auto;
     min-width: 0;
+    border: 1px solid red;
+}
+
+.slider-main__controls {
+    align-items: stretch;
+    gap: 150px;
+    margin: 0px 0px 20px 0px;
+    
     border: 1px solid red;
 }
 
@@ -433,15 +448,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 0px 20px 0px;
-    border: 1px solid green;
+    border: 1px solid black;
+    
 }
 
 .slider-arrows {
     display: grid;
     grid-template-columns: repeat(2, 48px);
     column-gap: 8px;
-    border: 1px solid black;
 }
 
 .slider-arrow {
@@ -465,7 +479,6 @@ body {
 .dots-pagination {
     display: flex;
     align-items: center;
-    border: 1px solid black;
 }
 
 .dot-pagination {
@@ -481,6 +494,64 @@ body {
 
 .dot-pagination:not(:last-child) {
     margin-right: 12px;
+}
+
+.slider-main__slide {
+    position: relative;
+    overflow: visible;
+    flex-direction: row;
+    display: flex;
+    width: 934px;
+    
+}
+
+.slider-main__image {
+    padding: 0px 0px 50% 0px;
+   
+}
+
+.slider-main__card {
+    position: absolute;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 148px;
+    width: 294px;
+    left: 1006px;
+    top: 586px;
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(15.5px);
+    padding: 24px;
+    text-decoration: none;
+    border: 1px solid violet;
+}
+
+.slider-main__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;
+    color: #3A3A3A;
+    margin: 0px 0px 0.5em 0px;
+}
+
+.slider-main__texte {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #616161;
+    margin: 0px 0px 1em 0px;
+}
+
+.slider-main__price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    margin: 0px 0px 1em 0px;
+    color: #3A3A3A;
 }
 
 /* .slider {
