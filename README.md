@@ -1,2 +1,1 @@
-f33-js-project1
-https://funiro.ga/home.html?form%5B%5D=chair
+detailed guide to the scss and sass preprocessor by Vadym Prokopchuk 19/05/19
