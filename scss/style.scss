@@ -1,0 +1,56 @@
+$top-color: #fd12cc;
+$name: 'lato', sans-serif;
+%name-item {
+    font-size: 22px;
+    padding: 10px;
+    background-color: $top-color;
+}
+
+
+.test {
+    text-align: center;
+}
+
+.menu {
+    float: right;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li {display: inline-block;
+        a {
+        text-decoration: none;
+        }
+    } 
+}
+
+.description {
+    color: $top-color;
+    &:hover {
+        color: black;
+        font-family: $name;
+    }
+}
+
+.tools{
+    &-description{
+        text-align: left;
+    }
+    &.item{
+        float: left;
+    }
+}
+
+.item-1{
+    color: gray;
+    @extend %name-item;
+}
+.item-2{
+    color: white;
+    @extend %name-item;
+}
+.item-3{
+    color: black;
+    @extend %name-item;
+}
