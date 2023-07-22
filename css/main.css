@@ -428,7 +428,33 @@ body::-webkit-scrollbar-thumb:hover {
         margin-bottom: 30px;
         font-size: 40px;
     }
+    .title-2 {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
     .project__title {
         font-size: 22px;
+    }
+    .project-details__desc {
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+    .content-list {
+        row-gap: 20px;
+    }
+    .content-list__item {
+        font-size: 16px;
+    }
+    .footer {
+        padding: 40px 0 30px;
+    }
+    .footer__wrapper {
+        row-gap: 20px;
+    }
+    .social {
+        column-gap: 20px;
+    }
+    .social__item {
+        width: 28px;
     }
 }
