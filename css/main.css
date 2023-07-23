@@ -69,7 +69,7 @@
 
     /* Light mode */
     --page-bg: var(--light-yellow);
-    --text-color: var(--dark-gray);
+    --text-color: var(--dark-blue);
 
     --title-1: var(--dark-gray);
 
@@ -434,7 +434,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .content-list a {
-    color: var(--broun);
+    color: var(--dark-gray);
 }
 
 .content-list__item p {
