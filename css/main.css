@@ -1,8 +1,5 @@
 @import url(./reset.css);
 
-/* font-family: 'DM Sans', sans-serif;
-font-family: 'Poppins', sans-serif; */
-
 @font-face {
     font-family: 'DM Sans';
     src: url(../assets/fonts/DMSans-Bold.woff2) format('woff2');
@@ -58,34 +55,38 @@ font-family: 'Poppins', sans-serif; */
     --light-dark: #272727;
     --white: #fff;
     --purple: #5C62EC;
-
-    --text-color: var(--black);
+    --yellow: #FCD902;
+    --light-yellow: #f4e4c5;
+    --beige: #d0ad83;
+    --broun: #806a57;
+    --dark-gray: #4c5c74;
+    --dark-blue: #1e2a42;
 
     --dark-bg: var(--black);
     --dark-border: var(--black-border);
     --header-text: var(--white);
-    --accent: var(--purple);
+    --accent: var(--yellow);
 
     /* Light mode */
-    --page-bg: var(--white);
-    --text-color: var(--black);
+    --page-bg: var(--light-yellow);
+    --text-color: var(--dark-gray);
 
-    --title-1: var(--accent);
+    --title-1: var(--dark-gray);
 
     --project-card-bg: var(--white);
-    --project-card-text: var(--black);
+    --project-card-text: var(--dark-gray);
     --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
 }
 
 .dark {
     /* Dark mode */
     --page-bg: var(--light-dark);
-    --text-color: var(--white);
+    --text-color: var(--light-yellow);
 
-    --title-1: var(--white);
+    --title-1: var(--accent);
 
     --project-card-bg: var(--black);
-    --project-card-text: var(--white);
+    --project-card-text: var(--light-yellow);
     --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.8);
 }
 
@@ -106,19 +107,18 @@ html, body {
 
 body::-webkit-scrollbar {
     background: var(--dark-bg);
-    width: 6px;
+    width: 8px;
     height: 6px;
 }
 
 body::-webkit-scrollbar-thumb {
     background-color: var(--dark-border);
-    border: 1px solid var(--dark-border);
+    border: 1px solid var(--beige);
     border-radius: 10px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
     background-color: var(--accent);
-    /* opacity: 0.8; */
 }
 
 /* General */
@@ -127,8 +127,6 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 0 auto;
     padding: 0 15px;
     max-width: 1220px;
-
-    /* border: 1px solid red; */
 }
 
 .section {
@@ -176,7 +174,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .logo {
     margin-right: auto;
-    color: var(--header-text);
+    color: var(--accent);
     font-size: 24px;
     font-family: 'Poppins', sans-serif;
 }
@@ -276,9 +274,9 @@ body::-webkit-scrollbar-thumb:hover {
     align-items: center;
 
     background-color: var(--dark-bg);
-    background-image: url(../assets/img/header-bg.png);
+    background-image: url(../assets/img/bg.jpg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     background-position: center center;
 
     color: var(--header-text);
@@ -299,7 +297,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 .header__title strong {
     font-size: 60px;
-    /* font-weight: 700; */
 }
 
 .header__title em {
@@ -308,7 +305,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .header__text {
     margin-bottom: 40px;
-    font-size: 18px;
+    font-size: 28px;
     line-height: 1.333;
 }
 
@@ -406,8 +403,6 @@ body::-webkit-scrollbar-thumb:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-
-    /* border: 1px solid red; */
 }
 
 .project-details__cover {
@@ -436,16 +431,14 @@ body::-webkit-scrollbar-thumb:hover {
     align-items: center;
     row-gap: 40px;
     text-align: center;
-
-    /* border: 1px solid red; */
 }
 
 .content-list a {
-    color: var(--accent);
+    color: var(--broun);
 }
 
-.content-list__item {
-    font-size: 18px;
+.content-list__item p {
+    font-size: 24px;
     line-height: 1.5; 
 }
 
@@ -493,6 +486,9 @@ body::-webkit-scrollbar-thumb:hover {
     .header__title strong {
         font-size: 40px;
     }
+    .header__text {
+        font-size: 24px;
+    }
     .nav-row {
         justify-content: space-between;
     }
@@ -520,7 +516,7 @@ body::-webkit-scrollbar-thumb:hover {
     .content-list {
         row-gap: 20px;
     }
-    .content-list__item {
+    .content-list__item p {
         font-size: 16px;
     }
     .footer {
