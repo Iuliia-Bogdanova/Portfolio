@@ -289,10 +289,10 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .header__title {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     font-size: 40px;
     font-weight: 700;
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 .header__title strong {
@@ -303,8 +303,9 @@ body::-webkit-scrollbar-thumb:hover {
     font-style: normal;
     color: var(--accent);
 }
+
 .header__text {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     font-size: 28px;
     line-height: 1.333;
 }
@@ -319,6 +320,7 @@ body::-webkit-scrollbar-thumb:hover {
     display: inline-block;
     height: 48px;
     padding: 12px 28px;
+    margin-bottom: 60px;
 
     border-radius: 5px;
     background-color: var(--accent);
