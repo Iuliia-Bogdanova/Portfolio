@@ -177,6 +177,7 @@ body::-webkit-scrollbar-thumb:hover {
     color: var(--accent);
     font-size: 24px;
     font-family: 'Poppins', sans-serif;
+    line-height: .8;
 }
 
 .logo strong {
@@ -189,7 +190,7 @@ body::-webkit-scrollbar-thumb:hover {
     row-gap: 10px;
     align-items: center;
     column-gap: 40px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
 }
@@ -493,6 +494,12 @@ body::-webkit-scrollbar-thumb:hover {
     }
     .nav-row {
         justify-content: space-between;
+    }
+    .logo {
+        font-size: 22px;
+    }
+    .nav-list {
+        font-size: 16px;
     }
     .dark-mode-btn {
         order: 0;
