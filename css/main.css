@@ -369,6 +369,14 @@ body::-webkit-scrollbar-thumb:hover {
     top: 1px;
 }
 
+/* CV page */
+
+.cv {
+    width: 80%;
+    margin: 40px auto;
+    box-shadow: var(--box-shadow);
+}
+
 /* Projects */
 
 .projects {
