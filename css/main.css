@@ -149,6 +149,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 40px;
     font-weight: 700;
     line-height: 1.3;
+    text-align: center;
 }
 
 /* Navigation */
@@ -461,6 +462,21 @@ body::-webkit-scrollbar-thumb:hover {
 
 .content-list__item p + p {
     margin-top: .5em;
+}
+
+/* Map */
+
+.wrapper__map {
+
+}
+
+.map {
+    width: 80%;
+    height: 370px;
+    margin: 0 auto;
+    background-color: var(--light-yellow);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
 }
 
 /* Footer */
