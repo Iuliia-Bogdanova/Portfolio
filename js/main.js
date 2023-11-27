@@ -41,3 +41,30 @@ btnDarkMode.onclick = function () {
         localStorage.setItem('darkMode', 'light');
     }
 }
+
+// Yandex Map
+
+    ymaps.ready(init);
+    function init(){
+        var myMap = new ymaps.Map("map", {
+            center: [56.86, 53.21],
+            zoom: 6,
+        });
+
+        var myPlacemark = new ymaps.Placemark(
+            [56.86, 53.21],
+            {},
+            {
+                preset: "islands#grayDotIcon",
+            }
+        );
+
+        myMap.controls.remove("trafficControl");
+        myMap.behaviors.disable(['scrollZoom']);
+        // myMap.controls.remove("rulerControl");
+
+        // myMap.controls.add("smallMapDefaultSet");
+
+
+        myMap.geoObjects.add(myPlacemark); 
+    }

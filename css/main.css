@@ -467,7 +467,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* Map */
 
 .wrapper__map {
-
+    
 }
 
 .map {
@@ -477,6 +477,24 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--light-yellow);
     box-shadow: var(--box-shadow);
     border-radius: 10px;
+}
+
+[class*="copyrights-pane"] {
+    opacity: 0;
+    transition: opacity .3s ease-in;
+}
+
+.map:hover [class*="copyrights-pane"] {
+    opacity: 1;
+    transition: all .3s ease-in;
+}
+
+[class*="gototech"] {
+    opacity: 0;
+}
+
+[class*="ground-pane"] {
+    filter: grayscale(.2) sepia(10%);
 }
 
 /* Footer */
@@ -557,6 +575,10 @@ body::-webkit-scrollbar-thumb:hover {
     }
     .content-list__item p {
         font-size: 16px;
+    }
+
+    .map {
+        width: 90%;
     }
     .footer {
         padding: 40px 0 30px;
