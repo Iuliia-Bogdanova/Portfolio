@@ -5,6 +5,7 @@ Adaptive layout for mobile devices and tablets, media queries.
 Dark theme on CSS variables and JavaScript.  
 Determination of the dark theme by system settings.  
 Saving selected theme to localStorage.    
-Using Meta tags to identify an image when linking to a web page.
+Using Meta tags to identify an image when linking to a web page.  
+Favicons.
 
 https://iuliia-bogdanova.github.io/Portfolio/
