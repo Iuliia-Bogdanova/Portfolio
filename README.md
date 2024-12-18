@@ -1,10 +1,11 @@
-Web Projects Completed in 2023-2024
+Web Projects / Demos Completed in 2023-2024
 
-Adaptive HTML layout of the portfolio website in HTML and CSS.  
-Mobile adaptive layout, media queries.  
+Portfolio website in HTML and CSS.  
+Adaptive layout for mobile devices and tablets, media queries.  
 Dark theme on CSS variables and JavaScript.  
 Determination of the dark theme by system settings.  
-Saving the selected theme in localStorage.    
-Meta tags are used to identify the image when placing a link to a web page.
+Saving selected theme to localStorage.    
+Using Meta tags to identify an image when linking to a web page.  
+Favicons.
 
 https://iuliia-bogdanova.github.io/Portfolio/
